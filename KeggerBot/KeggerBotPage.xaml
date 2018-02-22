@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:local="clr-namespace:KeggerBot" 
+    x:Class="KeggerBot.KeggerBotPage"
+    Style="{StaticResource PageStyle}">
+	
+        <StackLayout Padding="20,10,20,10">
+        <Image x:Name="logo" WidthRequest="600" HorizontalOptions="StartAndExpand"/>
+        <!--Line -->
+        <BoxView WidthRequest="100" HeightRequest="2" Color="Black"/>
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+            <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                <Label x:Name="ontap" FontSize="30" Text="Here is what is on tap:" TextColor="Black" VerticalOptions="Start" HorizontalOptions="StartAndExpand" />
+            </StackLayout>
+            <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                <Button HorizontalOptions="End" x:Name="NewDrinker" Text="New Drinker"/>
+            </StackLayout>
+        </StackLayout>
+
+        <Button HorizontalOptions="End" x:Name="p" Text="Pour Me A Beer!"/>
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+            <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+            <Image x:Name="lefttap" WidthRequest="200"/>
+                </StackLayout>
+            <StackLayout Orientation="Vertical" HorizontalOptions="StartAndExpand">
+            <Image x:Name="righttap" WidthRequest="200"/>
+                </StackLayout>
+        </StackLayout>
+
+        <!--<Button x:Name="button" Text="Pour!" Clicked="pourBeer"/> -->
+    </StackLayout> 
+
+
+
+    
+</ContentPage>

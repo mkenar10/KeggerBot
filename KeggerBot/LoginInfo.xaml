@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="KeggerBot.LoginInfo">
+	<ContentPage.Content>
+         <StackLayout Padding="20,10,20,10">
+        <Image x:Name="logo" WidthRequest="600" HorizontalOptions="StartAndExpand"/>
+        <!--Line -->
+        <BoxView WidthRequest="100" HeightRequest="2" Color="Black"/>
+
+        <Label Text="Login:"/>
+            <Entry x:Name="login" />
+        <Label Text="Password:"/>
+            <Entry x:Name="password" />
+
+        <!--<Button x:Name="button" Text="Pour!" Clicked="pourBeer"/> -->
+    </StackLayout> 
+	</ContentPage.Content>
+</ContentPage>
