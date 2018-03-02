@@ -9,9 +9,12 @@
         <BoxView WidthRequest="100" HeightRequest="2" Color="Black"/>
 
         <Label Text="Login:"/>
-            <Entry x:Name="login" />
+            <Entry x:Name="username" />
         <Label Text="Password:"/>
-            <Entry x:Name="password" />
+            <Entry x:Name="password" IsPassword="true" />
+
+            <Button Text="Login" x:Name="login" Clicked="Login_Clicked"/>
+            <Label x:Name="sample"/>
 
         <!--<Button x:Name="button" Text="Pour!" Clicked="pourBeer"/> -->
     </StackLayout> 
