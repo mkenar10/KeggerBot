@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="KeggerBot.CreateAccountPage">
 	<ContentPage.Content>
+        <ScrollView>
          <StackLayout Padding="20,10,20,10">
         <Image x:Name="logo" WidthRequest="600" HorizontalOptions="StartAndExpand"/>
         <!--Line -->
@@ -10,10 +11,15 @@
             <Entry x:Name="fname" />
         <Label Text="Last Name:"/>
             <Entry x:Name="lname" />
+        <Label Text="Desired Username:"/>
+            <Entry x:Name="uname" />
+        <Label Text="Desired password:"/>
+            <Entry x:Name="pword" />
 
-            <Button x:Name="saveInfo" Clicked="SaveInfo_Clicked" Text="Save!"/>
+            <Button x:Name="saveInfo" Clicked="AddUser_Clicked" Text="Add Me as a user!"/>
 
         <!--<Button x:Name="button" Text="Pour!" Clicked="pourBeer"/> -->
-    </StackLayout> 
+    </StackLayout>
+            </ScrollView>
 	</ContentPage.Content>
 </ContentPage>

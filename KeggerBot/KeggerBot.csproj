@@ -60,6 +60,10 @@
     <Compile Include="CreateAccountPage.xaml.cs">
       <DependentUpon>CreateAccountPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="User.cs" />
+    <Compile Include="Beer.cs" />
+    <Compile Include="Drink.cs" />
+    <Compile Include="Sensor.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">

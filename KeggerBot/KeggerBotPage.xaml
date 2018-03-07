@@ -13,13 +13,10 @@
         <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
             <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
                 <Label x:Name="ontap" FontSize="30" Text="Here is what is on tap:" TextColor="Black" VerticalOptions="Start" HorizontalOptions="StartAndExpand" />
-            </StackLayout>
-            <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
-                <Button HorizontalOptions="End" x:Name="NewDrinker" Text="New Drinker"/>
+                <Label x:Name="seemoreInfo" FontSize="12" Text="Click on an image to see more information." TextColor="Black" VerticalOptions="Start" HorizontalOptions="StartAndExpand" />
             </StackLayout>
         </StackLayout>
 
-        <Button HorizontalOptions="End" x:Name="p" Text="Pour Me A Beer!"/>
 
         <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
             <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">

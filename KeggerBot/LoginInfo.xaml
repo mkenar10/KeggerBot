@@ -9,7 +9,7 @@
         <BoxView WidthRequest="100" HeightRequest="2" Color="Black"/>
 
         <Label Text="Login:"/>
-            <Entry x:Name="username" />
+            <Entry x:Name="username"/>
         <Label Text="Password:"/>
             <Entry x:Name="password" IsPassword="true" />
 
