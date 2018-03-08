@@ -16,14 +16,19 @@
                 <Label x:Name="seemoreInfo" FontSize="12" Text="Click on an image to see more information." TextColor="Black" VerticalOptions="Start" HorizontalOptions="StartAndExpand" />
             </StackLayout>
         </StackLayout>
-
+        <StackLayout Spacing="100" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+            <Label/>
+        </StackLayout>
+                <StackLayout Spacing="100" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+            <Label/>
+        </StackLayout>
 
         <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
             <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
-            <Image x:Name="lefttap" WidthRequest="200"/>
+            <Image x:Name="lefttap" WidthRequest="400"/>
                 </StackLayout>
             <StackLayout Orientation="Vertical" HorizontalOptions="StartAndExpand">
-            <Image x:Name="righttap" WidthRequest="200"/>
+            <Image x:Name="righttap" WidthRequest="400"/>
                 </StackLayout>
         </StackLayout>
 

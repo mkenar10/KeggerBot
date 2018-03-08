@@ -59,15 +59,15 @@ namespace KeggerBot
 
         async void AddUser_Clicked(object sender, System.EventArgs e)
         {
-            HttpClient client = new HttpClient();
 
-            string url = @"http://keggerbotapi.azurewebsites.net/api/user/AddUser";
+
+            HttpClient client = new HttpClient();
+            string url = @"http://keggerbotapi.azurewebsites.net/api/user/PostUser";
 
             string firstname = fname.Text.ToString();
             string lastname = lname.Text.ToString();
             string username = uname.Text.ToString();
             string password = pword.Text.ToString();
-
 
             var user = new User
             {
@@ -76,6 +76,23 @@ namespace KeggerBot
                 UserName = username,
                 Password = password
             };
+
+            //try{
+               // var content = JsonConvert.SerializeObject(user);
+               // await client.PostAsync(url, new StringContent(content));
+           // }catch(Exception ex){
+            //    ex.Message.ToString();
+           // }
+
+
+
+
+
+
+
+            //HttpClient client = new HttpClient();
+
+            //string url = @"http://keggerbotapi.azurewebsites.net/api/user";
 
             var uri = new Uri(string.Format(url, string.Empty));
 
@@ -94,7 +111,7 @@ namespace KeggerBot
             }
             catch (Exception ex)
             {
-                ex.Message.ToString();
+               ex.Message.ToString();
             }
 
 
@@ -107,7 +124,9 @@ namespace KeggerBot
             // await client.PostAsync(url, new StringContent(content));
             // await DisplayAlert("Alert", "You have been added! Please log in.", "OK");
         }
+
     }
+
 }
 
        // public void AddUser(string username, string password, string firstname, string lastname)

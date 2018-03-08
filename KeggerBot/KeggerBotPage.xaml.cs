@@ -13,8 +13,8 @@ namespace KeggerBot
 
             //images
             logo.Source = ImageSource.FromFile("SogetiKegBot.Droid/Resources/drawable/beer1.png");
-            lefttap.Source = ImageSource.FromFile("SogetiKegBot.Droid/Resources/drawable/TwoBrothers.jpg");
-            righttap.Source = ImageSource.FromFile("SogetiKegBot.Droid/Resources/drawable/bluemoon.jpg");
+            lefttap.Source = ImageSource.FromFile("SogetiKegBot.Droid/Resources/drawable/TwoBros.jpg");
+            righttap.Source = ImageSource.FromFile("SogetiKegBot.Droid/Resources/drawable/Buckle.jpg");
 
             //labels
             ontap.FontAttributes = FontAttributes.Italic;
@@ -41,7 +41,7 @@ namespace KeggerBot
         }
 
         async void AlertLeftTap(object sender, EventArgs e){
-            var clicked = await DisplayAlert("Two Brothers Beer", "Type: Hefeweizen \n\nDescription: Ebel's Weiss beer is a very traditional German Hefeweizen that is naturally unfiltered. It has wonderful malt sweetness and a soft aroma of clove, vanilla, and banana. This deep golden colored weiss will make you think you are in Bavaria. ", "Pour This Beer!", "No Thanks");
+            var clicked = await DisplayAlert("Two Brothers Beer - Ebel's Weiss", "Type: Hefeweizen \n\nABV: 4.9 \n\nDescription: Ebel's Weiss beer is a very traditional German Hefeweizen that is naturally unfiltered. It has wonderful malt sweetness and a soft aroma of clove, vanilla, and banana. This deep golden colored weiss will make you think you are in Bavaria. ", "Pour This Beer!", "No Thanks");
             if(clicked.Equals(true)){
                 await DisplayAlert("Pouring Two Brothers Beer...", "Pouring Now", "OK");
             }
@@ -51,11 +51,11 @@ namespace KeggerBot
 
         async void AlertRightTap(object sender, EventArgs e)
         {
-            var clicked = await DisplayAlert("Blue Moon", "Type: Belgian-style witbier \n\nDescription: Blue Moon Belgian White Ale. Brewed with oats for creaminess and spiced with the perfect combination of orange peel and coriander. An unfiltered wheat ale spiced in the Belgian tradition for an uncommonly smooth taste. ", "Pour This Beer!", "No Thanks");
+            var clicked = await DisplayAlert("BuckleDown - Belt And Suspenders ", "Type: India Pale Ale \n\nABV: 7.0 \n\nDescription: Loads of Nugget, Crystal and Sterling hops lead the way in producing an amazing beer with huge hop aromas. The bitterness of this beer is balanced by a well-selected malt backbone. A pleasantly drinkable brew for 7% ABV. ", "Pour This Beer!", "No Thanks");
             //keep track of how much beer is being poured.
             if (clicked.Equals(true))
             {
-                await DisplayAlert("Pouring Blue Moon...", "Pouring Now", "OK");
+                await DisplayAlert("Pouring BuckleDown...", "Pouring Now", "OK");
             }
             else
             {
